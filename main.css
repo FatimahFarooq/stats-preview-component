@@ -1,0 +1,131 @@
+root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: hsl(233, 47%, 7%);
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  background-color: hsl(244, 38%, 16%);
+  margin: 2em;
+  padding: 0 0 2em;
+  border-radius: 10px;
+}
+
+.img-container {
+  background: rgb(170, 92, 219, 0.95) url("images/image-header-mobile.jpg")
+    no-repeat;
+  background-size: cover;
+  height: 40vh;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-blend-mode: multiply;
+}
+
+h1 {
+  padding: 0 2em;
+  line-height: 1.5;
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+  font-family: "Inter", sans-serif;
+}
+
+h1 > span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  padding: 0 1.95em;
+  margin-bottom: 2.75em;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.95em;
+  font-family: "Inter", sans-serif;
+  line-height: 1.95em;
+}
+
+ul {
+  text-transform: uppercase;
+  margin-bottom: 1.75em;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 2em;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.75em;
+  font-family: "Inter", sans-serif;
+}
+
+ul span {
+  text-transform: lowercase;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: left;
+    padding: 0;
+  }
+
+  h1 {
+    padding: 0;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 0;
+  }
+
+  .stats {
+    padding: 4em;
+  }
+
+  .img-container {
+    background: rgb(170, 92, 219, 0.95) url("images/image-header-mobile.jpg")
+      no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    width: 50vw;
+    height: 100%;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  ul li {
+    margin-right: 15%;
+  }
+}
